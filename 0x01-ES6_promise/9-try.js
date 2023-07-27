@@ -5,7 +5,7 @@ export default function guardrail(mathFunction) {
     arr[0] = result;
     arr[1] = 'Guardrail was processed';
   } catch (err) {
-    arr[0] = err.message;
+    arr[0] = `Error: ${err.message}`;
     arr[1] = 'Guardrail was processed';
   }
 
